@@ -27,4 +27,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run start
-          wait-on: 'http://localhost:3000'
+          wait-on: 'https://yaraworks.com/app'
