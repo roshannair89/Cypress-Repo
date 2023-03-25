@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v1
       - name: Firefox Browser Tests
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v5
         with:
           browser: firefox
           start: yarn start
@@ -24,7 +24,7 @@ jobs:
           wait-on-timeout: 300
           config: defaultCommandTimeout=100000,pageLoadTimeout=100000,watchForFileChanges=false,video=false
       - name: Chrome Browser Tests
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           start: yarn start
